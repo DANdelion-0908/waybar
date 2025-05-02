@@ -144,15 +144,15 @@
         "signal": 1
     },
     "cpu": {
-        "format": "󰻠",
+        "format": "󰻠 {usage}%",
         "tooltip": true
     },
     "memory": {
-        "format": ""
+        "format": "  {percentage}%"
     },
     "temperature": {
         "critical-threshold": 80,
-        "format": ""
+        "format": " {temperatureC}°C"
     },
     "tray": {
         "icon-size": 20,
