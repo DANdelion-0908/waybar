@@ -104,25 +104,40 @@ tooltip {
     padding: 0px 10px;
     margin: 0px 10px 0px 10px;
     transition: all .3s ease;
-    color: @foreground;;
+    color: @foreground;
+        border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: @color1;
+    border-radius: 0px;
 }
 #bluetooth{
-    padding: 0px 5px;
+    padding: 0px 15px;
     transition: all .3s ease;
     color:@foreground;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: @color1;
+    border-radius: 0px;
 
 }
 #network{
-    padding: 0px 10px;
+    padding: 0px 15px;
     transition: all .3s ease;
     color:@foreground;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: @color1;
+    border-radius: 0px;
 
 }
 #battery{
     padding: 0px 10px;
     transition: all .3s ease;
     color:@foreground;
-
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: @color1;
+    border-radius: 0px;
 
 }
 #battery.charging {
@@ -162,6 +177,10 @@ tooltip {
     transition: all .3s ease; 
     margin: 0px 10px 0px 0px; 
     color:@foreground;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: @color1;
+    border-radius: 0px;
 
 }
 #custom-endpoint{
@@ -190,4 +209,8 @@ tooltip {
     margin-left: 10px;
     transition: all .3s ease; 
     color:@foreground;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: @color1;
+    border-radius: 0px;
 }
