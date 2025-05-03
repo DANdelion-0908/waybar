@@ -72,9 +72,10 @@
         "format-wifi": "",
         "format-ethernet":"",
         "format-disconnected": "",
+        "format": "{essid}",
         "tooltip-format-disconnected": "Error",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-        "tooltip-format-ethernet": "{ifname} 🖧 ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname}",
         "on-click": "kitty nmtui"
     },
     "bluetooth": {
@@ -96,6 +97,7 @@
             "warning": 30,
             "critical": 20
         },
+        "full-at": 80,
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% 󰂄 ",

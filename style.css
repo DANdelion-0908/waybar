@@ -1,28 +1,4 @@
-@define-color background alpha(#4e5883, .8);
-@define-color accent #D00D38;
-@define-color primary #1970A6;
-@define-color secondary #EE97B6;
-@define-color white #FFFFFF;
-
-.class {
-    color: @background;
-}
-
-.class {
-    color: @accent;
-}
-
-.class {
-    color: @primary;
-}
-
-.class {
-    color: @secondary;
-}
-
-.class {
-    color: @white;
-}
+@import url('../../.cache/wal/colors-waybar.css');
 
 * {
     font-size:15px;
@@ -31,25 +7,24 @@
 }
 window#waybar{
     all:unset;
-    background-color: rgba(0, 0, 0, .3);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    background-color: alpha(@background, 0.4);
 }
 .modules-left {
-    background-color: @background;
-    padding:9px;
-    margin:0px 0px 1px 10px;
+    background-color: @color0;
+    padding:5px;
+    margin:2px 0px 2px 10px;
     border-radius:10px;
 }
 .modules-center {
-    background-color: @background;
-    padding:9px;
-    margin:0px 0px 1px 0px;
+    background-color: @color0;
+    padding:5px;
+    margin:2px 0px 2px 0px;
     border-radius:10px;
 }
 .modules-right {
-    background-color: @background;
-    padding:9px;
-    margin:0px 10px 1px 0px;
+    background-color: @color0;
+    padding:5px;
+    margin:2px 10px 2px 0px;
     border-radius:10px;
 }
 #network {
@@ -57,26 +32,33 @@ window#waybar{
 }
 tooltip {
     background:@background;
-    color: #000000;
+    color: @foreground;
 }
 #clock:hover, #custom-pacman:hover, #custom-launcher:hover, #custom-notification:hover, #pulseaudio:hover, #bluetooth:hover, #network:hover, #backlight:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover{
     transition: all .3s ease;
-    color:@secondary;
+    color:@color1;
 }
 #custom-notification {
     padding: 0px 5px;
+    margin-right: 10px;
     transition: all .3s ease;
-    color:@white;
+    color:@foreground;
 }
 #clock{
     padding: 0px 5px;
-    color:@white;
+    color:@foreground;
     transition: all .3s ease;
 }
 #custom-pacman{
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@white;
+    color:@foreground;
+
+}
+#custom-launcher{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@foreground;
 
 }
 #workspaces {
@@ -88,33 +70,33 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0px 5px;
-    color: alpha(@primary,.4);
+    color: alpha(@color1,0.5);
     transition: all .2s ease;
 }
 #workspaces button:hover {
-    color: @secondary;
+    color: @color2;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
 }
 #workspaces button.active {
-    color: @primary;
+    color: @color1;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 #workspaces button.empty {
-    color: rgba(0,0,0,0);
+    color: @color8;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 #workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
+    color: @color4;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
 }
 #workspaces button.empty.active {
-    color: @color9;
+    color: @color2;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -122,24 +104,24 @@ tooltip {
     padding: 0px 10px;
     margin: 0px 10px 0px 10px;
     transition: all .3s ease;
-    color: @white;
+    color: @foreground;;
 }
 #bluetooth{
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@white;
+    color:@foreground;
 
 }
 #network{
     padding: 0px 10px;
     transition: all .3s ease;
-    color:@white;
+    color:@foreground;
 
 }
 #battery{
     padding: 0px 10px;
     transition: all .3s ease;
-    color:@white;
+    color:@foreground;
 
 
 }
@@ -181,7 +163,7 @@ tooltip {
     padding: 0px 10px;
     transition: all .3s ease; 
     margin: 0px 10px 0px 0px; 
-    color:@white;
+    color:@foreground;
 
 }
 #custom-endpoint{
@@ -194,7 +176,7 @@ tooltip {
     transition: all .3s ease; 
     margin-left: 10px;
     margin-right: 10px;
-
+    
 }
 #tray menu * {
     padding: 0px 5px;
@@ -207,5 +189,7 @@ tooltip {
 }
 #backlight{
     padding: 0px 5px;
+    margin-left: 10px;
     transition: all .3s ease; 
+    color:@foreground;
 }
