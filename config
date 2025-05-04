@@ -8,7 +8,7 @@
 
     "custom/launcher": {
         "format": " ",
-        "on-click": "wofi --show drun"
+        "on-click": "exec rofi -show drun"
     },
     "hyprland/workspaces": {
         "format": "{icon}",
