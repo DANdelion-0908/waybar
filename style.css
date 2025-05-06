@@ -138,6 +138,7 @@ tooltip {
     border-style: solid;
     border-color: @color1;
     border-radius: 0px;
+    background-color: transparent;
 
 }
 #battery.charging {
@@ -146,7 +147,6 @@ tooltip {
 
 #battery.warning:not(.charging) {
     color: #ffbe61;
-    background-color: transparent;
 }
 
 #battery.critical:not(.charging) {
