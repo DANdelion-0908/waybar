@@ -24,7 +24,11 @@
     "hyprland/window": {
         "format": "{initialTitle}",
         "icon": true,
-        "icon-size": 20
+        "icon-size": 20,
+        "rewrite": {
+            "(.*) - Discord":"Discord",
+            "(.*) — Dolphin":"Dolphin"
+        }
     },
     "custom/notification": {
         "tooltip": false,
