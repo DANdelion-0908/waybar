@@ -227,3 +227,6 @@ tooltip {
     border-color: @color1;
     border-radius: 2px;
 }
+window#waybar.empty #window {
+    border: none;
+}
