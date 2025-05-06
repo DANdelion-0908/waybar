@@ -60,14 +60,15 @@ tooltip {
 }
 #custom-launcher{
     padding: 0px 5px;
+    font-size: 20px;
     transition: all .3s ease;
-    color:@foreground;
+    color:@color1;
 
 }
 #workspaces {
     margin-left: 10px;
     margin-right: 10px;
-    padding: 2px 10px;
+    padding: 2px 2px;
     border-radius: 5px;
 }
 #workspaces button {
