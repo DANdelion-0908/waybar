@@ -76,10 +76,11 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0px 15px;
+    color: alpha(@color1, 0.5);
     transition: all .2s ease;
 }
 #workspaces button:hover {
-    color: @color2;
+    color: @color1;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
@@ -95,13 +96,13 @@ tooltip {
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 #workspaces button.empty:hover {
-    color: @color4;
+    color: alpha(@color1, 0.7);
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
 }
 #workspaces button.empty.active {
-    color: @color2;
+    color: @color4;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
