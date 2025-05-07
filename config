@@ -2,20 +2,21 @@
     "layer": "top",
     "position": "top",
     "reload_style_on_change": true,
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/pacman", "tray", "custom/notification", "hyprland/window"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["group/expand", "backlight", "pulseaudio", "bluetooth","network","battery"],
+    "modules-right": ["tray", "pulseaudio","network","battery", "custom/notification"],
 
     "custom/launcher": {
         "format": " ",
         "on-click": "exec rofi -show drun"
     },
     "hyprland/workspaces": {
-        "format": "{icon}",
+        "format": "{id} {icon}",
         "format-icons": {
             "active": "",
             "default": "",
-            "empty": ""
+            "empty": "",
+            "5": ""
         },
         "persistent-workspaces": {
             "*": [ 1,2,3,4,5 ]
@@ -52,8 +53,8 @@
     },
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{icon} {volume}%",
-        "format-muted": "󰝟 muted",
+        "format": "{volume}% {icon}",
+        "format-muted": "Muted 󰝟 ",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -78,7 +79,7 @@
         "on-click-right": "brightnessctl set 10%"
     },
     "network": {
-        "format-wifi": "  {essid}",
+        "format-wifi": "{essid}  ",
         "format-ethernet":" {essid}",
         "format-disconnected": " :(",
         "tooltip-format-disconnected": "Error",
@@ -164,7 +165,7 @@
         "format": " {temperatureC}°C"
     },
     "tray": {
-        "icon-size": 18,
-        "spacing": 10
+        "icon-size": 20,
+        "spacing": 20
     }
 } 
