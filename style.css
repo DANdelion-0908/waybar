@@ -28,7 +28,7 @@ window#waybar{
 }
 tooltip {
     color: white;
-    background-color: @color1;
+    background-color: alpha(@color1, 0.8);
 }
 #clock:hover, #tray, #custom-pacman:hover, #custom-launcher:hover, #custom-notification:hover, #pulseaudio:hover, #bluetooth:hover, #network:hover, #backlight:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover{
     transition: all .3s ease;
