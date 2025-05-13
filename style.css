@@ -114,10 +114,11 @@ tooltip {
     border-radius: 10px;
 }
 #bluetooth{
-    padding: 0px 15px;
+    padding: 10px 10px;
+    margin-left: 10px;
     transition: all .3s ease;
-    color:@foreground;
-    background-color: @color4;
+    color:white;
+    background-color: alpha(@color8, 0.5);
     border-radius: 10px;
 
 }
