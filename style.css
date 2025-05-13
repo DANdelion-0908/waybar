@@ -7,7 +7,6 @@
 }
 window#waybar{
     all:unset;
-    background-color: alpha(@background, 0.2);
 }
 .modules-left {
     padding:5px;
@@ -29,16 +28,16 @@ window#waybar{
 }
 tooltip {
     color: white;
-    background-color: @color0;
+    background-color: @color1;
 }
 #clock:hover, #tray, #custom-pacman:hover, #custom-launcher:hover, #custom-notification:hover, #pulseaudio:hover, #bluetooth:hover, #network:hover, #backlight:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover{
     transition: all .3s ease;
-    background-color: alpha(@color1, 0.6);
+    background-color: alpha(@color1, 0.7);
 }
 #custom-notification {
     padding: 10px 15px;
     margin: 0px 10px;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
     border-radius: 10px;
     transition: all .3s ease;
     
@@ -46,7 +45,7 @@ tooltip {
 #clock{
     padding: 10px 10px;
     color:white;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
     border-radius: 10px;
     transition: all .3s ease;
 }
@@ -54,13 +53,13 @@ tooltip {
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color0;
-    background-color: @color7;
+    background-color: alpha(@color7, 0.7);
     border-radius: 10px;
 
 }
 #custom-launcher{
     padding: 10px 10px;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
     font-size: 20px;
     border-radius: 10px;
     transition: all .3s ease;
@@ -69,7 +68,7 @@ tooltip {
 }
 #workspaces {
     margin: 0px 10px 0px 10px;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
     padding: 10px 10px;
     border-radius: 10px;
 }
@@ -111,7 +110,7 @@ tooltip {
     margin: 0px 0px 0px 10px;
     transition: all .3s ease;
     color: white;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7); ;
     border-radius: 10px;
 }
 #bluetooth{
@@ -129,7 +128,7 @@ tooltip {
     transition: all .3s ease;
     color:white;
     border-radius: 10px;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
 
 }
 #battery{
@@ -137,7 +136,7 @@ tooltip {
     transition: all .3s ease;
     border-radius: 10px;
     color: white;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
 
 }
 #battery.charging {
@@ -191,7 +190,7 @@ tooltip {
 #tray{
     padding: 10px 15px;
     transition: all .3s ease; 
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
     border-radius: 10px;
     
 }
@@ -216,7 +215,7 @@ tooltip {
     padding: 10px 10px;
     border-radius: 10px;
     color: white;
-    background-color: @color0;
+    background-color: alpha(@color0, 0.7);
     transition: all .3s ease;
 }
 window#waybar.empty #window {
