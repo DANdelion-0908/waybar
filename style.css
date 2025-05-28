@@ -9,26 +9,19 @@ window#waybar{
     all:unset;
 }
 .modules-left {
-    padding:5px;
-    margin:2px 0px 2px 10px;
-    border-radius:10px;
+    margin:0px 0px 0px 10px;
     transition: all .3s ease;
 }
 .modules-center {
-    padding:5px;
-    margin:2px 0px 2px 0px;
-    border-radius:10px;
     transition: all .3s ease;
 }
 .modules-right {
-    padding:5px;
-    margin:2px 10px 2px 0px;
-    border-radius:10px;
     transition: all .3s ease;
 }
 tooltip {
     color: white;
-    background-color: alpha(@color0, 0.6);
+    background-color: alpha(@color0, 1);
+    border-radius: 10px;
 }
 #clock:hover, #tray, #custom-pacman:hover, #custom-launcher:hover, #custom-notification:hover, #pulseaudio:hover, #bluetooth:hover, #network:hover, #backlight:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover{
     transition: all .3s ease;
@@ -45,7 +38,7 @@ tooltip {
     transition: all .3s ease;
     color:@color1;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
     
@@ -56,7 +49,7 @@ tooltip {
     border-radius: 10px;
     transition: all .3s ease;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.6);
 }
@@ -77,7 +70,7 @@ tooltip {
     color: white;
     color:@color1;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 
@@ -89,7 +82,7 @@ tooltip {
     border-radius: 10px;
     color:@color4;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 }
@@ -135,7 +128,7 @@ tooltip {
     border-radius: 10px;
     color:@color3;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 }
@@ -148,7 +141,7 @@ tooltip {
     border-radius: 10px;
     color:@color2; 
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 
@@ -160,7 +153,7 @@ tooltip {
     transition: all .3s ease;
     color:@color1;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 
@@ -172,7 +165,7 @@ tooltip {
     color: white;
     background-color: alpha(@color0, 0.5);
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 
@@ -232,7 +225,7 @@ tooltip {
     border-radius: 10px;
     color:@color5;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
     
@@ -255,7 +248,7 @@ tooltip {
     border-radius: 10px;
     color:@color4;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 }
@@ -267,7 +260,7 @@ tooltip {
     transition: all .3s ease;
     color:@color3;
     border-radius: 10px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 2px;
     border-style: solid;
     background-color: alpha(@color0, 0.5);
 }

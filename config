@@ -28,7 +28,7 @@
         "icon-size": 20,
         "rewrite": {
             "(.*) - Discord":"Discord",
-            "(.*) — Dolphin":"Dolphin"
+            "(.*) — Thunar":"Thunar"
         }
     },
     "custom/notification": {
