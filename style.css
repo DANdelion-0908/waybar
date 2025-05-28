@@ -32,45 +32,66 @@ tooltip {
 }
 #clock:hover, #tray, #custom-pacman:hover, #custom-launcher:hover, #custom-notification:hover, #pulseaudio:hover, #bluetooth:hover, #network:hover, #backlight:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover{
     transition: all .3s ease;
-    background-color: alpha(@color1, 0.7);
+    background-color: alpha(@color7, 0.2);
+}
+#clock:hover{
+    transition: all .3s ease;
+    background-color: alpha(@color5, 0.5);
 }
 #custom-notification {
     padding: 10px 15px;
     margin: 0px 10px;
-    background-color: alpha(@color8, 0.5);
     border-radius: 10px;
     transition: all .3s ease;
+    color:@color1;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
     
 }
 #clock{
     padding: 10px 10px;
     color:white;
-    background-color: alpha(@color8, 0.5);
     border-radius: 10px;
     transition: all .3s ease;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.6);
 }
 #custom-pacman{
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@color8;
+    color:@color0;
     background-color: alpha(@color7, 0.7);
     border-radius: 10px;
 
 }
 #custom-launcher{
     padding: 10px 10px;
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
     font-size: 20px;
     border-radius: 10px;
     transition: all .3s ease;
     color: white;
+    color:@color1;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 
 }
 #workspaces {
     margin: 0px 10px 0px 10px;
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
     padding: 10px 10px;
     border-radius: 10px;
+    color:@color4;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 }
 #workspaces button {
     all:unset;
@@ -110,16 +131,26 @@ tooltip {
     margin: 0px 0px 0px 10px;
     transition: all .3s ease;
     color: white;
-    background-color: alpha(@color8, 0.5); ;
+    background-color: alpha(@color0, 0.5); ;
     border-radius: 10px;
+    color:@color3;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 }
 #bluetooth{
     padding: 10px 10px;
     margin-left: 10px;
     transition: all .3s ease;
     color:white;
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
     border-radius: 10px;
+    color:@color2; 
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 
 }
 #network{
@@ -127,9 +158,11 @@ tooltip {
     margin-left: 10px;
     margin-right: 10px;
     transition: all .3s ease;
-    color:white;
+    color:@color1;
     border-radius: 10px;
-    background-color: alpha(@color8, 0.5);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 
 }
 #battery{
@@ -137,7 +170,11 @@ tooltip {
     transition: all .3s ease;
     border-radius: 10px;
     color: white;
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 
 }
 #battery.charging {
@@ -191,8 +228,13 @@ tooltip {
 #tray{
     padding: 10px 15px;
     transition: all .3s ease; 
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
     border-radius: 10px;
+    color:@color5;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
     
 }
 #tray menu * {
@@ -209,15 +251,25 @@ tooltip {
     margin-left: 10px;
     transition: all .3s ease; 
     color:white;
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
     border-radius: 10px;
+    color:@color4;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 }
 #window{
     padding: 10px 10px;
     border-radius: 10px;
     color: white;
-    background-color: alpha(@color8, 0.5);
+    background-color: alpha(@color0, 0.5);
     transition: all .3s ease;
+    color:@color3;
+    border-radius: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    background-color: alpha(@color0, 0.5);
 }
 window#waybar.empty #window {
     border: none;
