@@ -25,7 +25,7 @@ tooltip {
 }
 #clock:hover, #tray, #custom-pacman:hover, #custom-launcher:hover, #custom-notification:hover, #pulseaudio:hover, #bluetooth:hover, #network:hover, #backlight:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover{
     transition: all .3s ease;
-    background-color: alpha(@color7, 0.2);
+    background-color: alpha(currentColor, 0.6);
 }
 #clock:hover{
     transition: all .3s ease;
